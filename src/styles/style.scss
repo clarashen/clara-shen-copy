@@ -81,6 +81,7 @@ h1 {
 }
 
 h2 {
+  font-size: 1.9rem;
   padding-bottom: .5rem;
   border-bottom: 4px solid var(--light-background);
 }
@@ -261,7 +262,7 @@ main {
 
 /*  Projects  */
 
-.projects .project:last-of-type {
+.projects .project :last-of-type {
   border-bottom-width: 0;
 }
 
@@ -285,7 +286,7 @@ main {
 }
 
 .project h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -300,8 +301,13 @@ main {
 }
 
 @media screen and (min-width: 800px) {
-  .project {
+  .projects .project :last-of-type {
     border-bottom-width: 0;
+  }
+
+  .project {
+    border-bottom-width: 2px;
+    padding: 1.25rem 0;
   }
 
   .project h3 {
@@ -314,7 +320,6 @@ main {
 
 .title {
   color: var(--heading-color);
-  font-size: 1.5rem;
   margin-bottom: 0.1rem;
 }
 
