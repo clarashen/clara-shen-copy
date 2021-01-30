@@ -1,7 +1,8 @@
 ---
-title: "Second Gatsby Blog Post"
+title: "Centre for High Throughput Screening Studies at IBCH PAS"
 date: "2020-01-19"
 excerpt: "This is a project description."
+categories: "infrastructure"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

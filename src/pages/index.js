@@ -35,10 +35,10 @@ const Index = () => {
           <p className="lighttext">Currently: Department leader and Centre director</p>
       </section>
       <section>
-        <h2>Work</h2>
-        <div className="Projects">
-        {data.allMarkdownRemark.edges.map(edge => {          
-              return (     
+            <h2>Infrastructure projects</h2>
+                <div className="Projects">
+                    {infrastructure.map(edge => {          
+                    return (     
                      <div className="project" key={edge.node.id}>
                          <div>              
                            <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
@@ -47,7 +47,7 @@ const Index = () => {
                         <div className="description">{edge.node.frontmatter.excerpt}</div> 
                     </div> 
                     <div className="flex">
-                            <Link className="button" to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
+                            <Link className="button" to={`/blog/${edge.node.fields.slug}/`}>Details</Link>
                     </div>   
                     </div>            
                     )        
@@ -57,7 +57,48 @@ const Index = () => {
         </div>
       </section>
     </Layout>
-  )
+    )
 }
 
-export default Index
+export const pageQuery = graphql`
+    query IndexQuery {
+        research: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+            filter: { frontmatter: {categories: {eq:"research"}}}) 
+          {
+                        edges {
+                              node {
+                                    frontmatter {
+                                          title 
+                                          date(formatString: "DD MMMM, YYYY")
+                                          excerpt
+                                  }              
+                                  timeToRead              
+                                  excerpt              
+                                  id
+                                  fields {
+                                      slug
+                                  }            
+                              }          
+                          }        
+                      }
+            infrastructure: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+                        filter: { frontmatter: {categories: {eq:"infrastructure"}}}) 
+                      {
+                                    edges {
+                                          node {
+                                                frontmatter {
+                                                      title 
+                                                      date(formatString: "DD MMMM, YYYY")
+                                                      excerpt
+                                              }              
+                                              timeToRead              
+                                              excerpt              
+                                              id
+                                              fields {
+                                                  slug
+                                              }            
+                                          }          
+                                      }        
+                                  }            
+                  }
+        `

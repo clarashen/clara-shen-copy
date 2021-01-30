@@ -43,7 +43,7 @@ return (
                         <div className="description">{edge.node.frontmatter.excerpt}</div> 
                     </div> 
                     <div className="flex">
-                            <Link className="button" to={`/blog/$/${edge.node.fields.slug}/`}>Read More</Link>
+                            <Link className="button" to={`/blog/$/${edge.node.fields.slug}/`}>Details</Link>
                     </div>   
                     </div>            
                     )        
