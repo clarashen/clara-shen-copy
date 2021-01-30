@@ -1,8 +1,8 @@
 ---
-title: "EU-OPENSCREEN-DRIVE"
-date: "2020-01-19"
-excerpt: "This is a project description."
-categories: "infrastructure"
+title: EU-OPENSCREEN-DRIVE Hi
+date: 2020-01-19
+excerpt: This is a project description.
+categories: infrastructure
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 
