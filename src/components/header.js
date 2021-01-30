@@ -20,7 +20,7 @@ const Header = () => {
       <div className="container">
         <div className="flex">
           <div className="flex">
-        <Link to="/" className="brand">Jacek Kolanowski</Link>
+        <Link to="/" className="brand">Dr Jacek Kolanowski</Link>
           </div>
           <div className="flex">
             <Link to="/blog">Work</Link>
