@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import headerStyles from "./header.module.scss"
 
 const Header = () => {
   const data = useStaticQuery(
@@ -17,32 +16,19 @@ const Header = () => {
   )
 
   return (
-    <header className={headerStyles.header}>
-     <div className={headerStyles.overlay}> 
-      <div className={headerStyles.heroContent}>
-        <p className={headerStyles.brand}>
-        <Link to="/">{data.site.siteMetadata.title}</Link>
-        </p>
-        <p className={headerStyles.description}>{data.site.siteMetadata.description}</p>
+    <nav className="navbar">
+      <div className="container">
+        <div className="flex">
+          <div className="flex">
+        <Link to="/" className="brand">Jacek Kolanowski</Link>
+          </div>
+          <div className="flex">
+            <Link to="/blog">Work</Link>
+            <Link to="/about">About</Link>
+          </div>
+        </div>
       </div>
-      <nav className={headerStyles.navContainer}>
-        <ul className={headerStyles.navList}>
-          <li>
-            <Link to="/" activeClassName={headerStyles.activeMenuItem}>Home</Link>
-          </li>
-          <li>
-            <Link to="/blog/" activeClassName={headerStyles.activeMenuItem}>Projects</Link>
-          </li>
-          <li>
-            <Link to="/contact/" activeClassName={headerStyles.activeMenuItem}>Contact</Link>
-          </li>
-          <li>
-            <Link to="/about/" activeClassName={headerStyles.activeMenuItem}>About</Link>
-          </li>
-        </ul>
-      </nav>
-      </div>
-    </header>
+    </nav>
   )
 }
 

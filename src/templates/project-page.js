@@ -28,11 +28,9 @@ export const query = graphql`
 const ProjectPage = props => {
   return (
     <Layout>      
+        <section>
         <div className={postStyles.content}>        
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>        
-                <span className={postStyles.meta}>          
-                    Posted on {props.data.markdownRemark.frontmatter.date}{" "}          <span> / </span> {props.data.markdownRemark.timeToRead} min read        
-                    </span>
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1>       
                     {
                         props.data.markdownRemark.frontmatter.featured && (
                             <Img
@@ -48,7 +46,8 @@ const ProjectPage = props => {
                         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}        
                         >
                     </div>      
-                    </div>    
+                    </div>   
+        </section> 
     </Layout>
   )
 }

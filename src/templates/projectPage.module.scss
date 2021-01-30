@@ -1,8 +1,9 @@
-.content {
+@media screen and (min-width: 800px) { 
+  
+  .content {
     h1 {
-      font-size: 35px;
-      margin: 0 0 10px;
-      text-align: center;
+      margin: 0px 0 20px;
+      text-align: left;
     }
   }
   .meta {
@@ -12,7 +13,10 @@
     font-weight: 300;
     margin-bottom: 20px;
   }
-  .featured {
-    max-height: 330px;
-    margin-bottom: 25px;
-  }
+
+}
+
+.featured {
+  max-height: 330px;
+  margin-bottom: 25px;
+}

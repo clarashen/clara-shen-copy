@@ -2,6 +2,7 @@
 title: "First Gatsby Blog Post"
 date: "2020-01-18"
 featured: "../images/first-post.png"
+excerpt: "This is a short description."
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -16,3 +17,8 @@ reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam molliti
 2. architecto, quia
 3. officiis aperiam
 4. voluptate quaerat
+
+> This project was funded by fjlsadkfjasl;kdfj
+> Total funding amount:
+> Start/end of program:
+

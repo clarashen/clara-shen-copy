@@ -1,13 +1,61 @@
 import React from "react"
 import Layout from "../components/layout"
 import Metadata from "../components/metadata"
+import { useStaticQuery, graphql, Link } from "gatsby"
 
 const Index = () => {
+  const data = useStaticQuery(
+    graphql`
+          query {
+                  allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+                                edges {
+                                      node {
+                                            frontmatter {
+                                                  title 
+                                                  date(formatString: "DD MMMM, YYYY")
+                                                  excerpt
+                                          }              
+                                          timeToRead              
+                                          excerpt              
+                                          id
+                                          fields {
+                                              slug
+                                          }            
+                                      }          
+                                  }        
+                              }      
+                          }    
+                          `  
+                      )  
   return (
     <Layout>
       <Metadata title="Home" description="Scientific research director" />
-      <h1>Welcome</h1>
-      <h2>Jacek is an independent scientific group leader, scientific director and young academic who is passionate about</h2>
+      <section>
+          <p>Jacek is a research leader and strategist who is passionate about bridging intersectoral industries for scientific advancement. He builds research and infrastucture programs that win funding, encourage collaboration and promote innovation.</p>
+          <p className="lighttext">Currently: Department leader and Centre director</p>
+      </section>
+      <section>
+        <h2>Work</h2>
+        <div className="Projects">
+        {data.allMarkdownRemark.edges.map(edge => {          
+              return (     
+                     <div className="project" key={edge.node.id}>
+                         <div>              
+                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
+                               </Link>
+                           </h3>          
+                        <div className="description">{edge.node.frontmatter.excerpt}</div> 
+                    </div> 
+                    <div className="flex">
+                            <Link className="button" to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
+                    </div>   
+                    </div>            
+                    )        
+                }
+            )
+        }      
+        </div>
+      </section>
     </Layout>
   )
 }

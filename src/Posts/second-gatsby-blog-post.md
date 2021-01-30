@@ -1,6 +1,7 @@
 ---
 title: "Second Gatsby Blog Post"
 date: "2020-01-19"
+excerpt: "This is a project description."
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

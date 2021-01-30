@@ -15,13 +15,7 @@ const Blog = () => {
                                                   frontmatter {
                                                         title 
                                                         date(formatString: "DD MMMM, YYYY")
-                                                        featured {
-                                                            childImageSharp {
-                                                                fluid(maxWidth: 750) {
-                                                                    ...GatsbyImageSharpFluid
-                                                                }
-                                                            }
-                                                        }
+                                                        excerpt
                                                 }              
                                                 timeToRead              
                                                 excerpt              
@@ -34,45 +28,32 @@ const Blog = () => {
                                     }      
                                 }    
                                 `  
-                                )  
+                            )  
 return (
     <Layout>
     <Metadata title="Work" description="Jacek Kolanowski" /> 
-      <ul className={blogStyles.posts}>        
-          {data.allMarkdownRemark.edges.map(edge => {          
-              return (            
-              <li className={blogStyles.post} key={edge.node.id}>              
-              <h2><Link to={`/blog/${edge.node.fields.slug}/`}>                  
-              {edge.node.frontmatter.title}                
-              </Link>
-              </h2>              
-              <div className={blogStyles.meta}>                
-                  <span>                  
-                      Posted on {edge.node.frontmatter.date} <span> / </span>{" "}                  
-                      {edge.node.timeToRead} min read                
-                      </span>              
-                </div> 
-                {
-                edge.node.frontmatter.featured && (
-                     <Img 
-                            className={blogStyles.featured}
-                            fluid={edge.node.frontmatter.featured.childImageSharp.fluid}
-                            alt={edge.node.frontmatter.title}
-                    />
-                    )
-}            
-                 <p className={blogStyles.excerpt}>{edge.node.excerpt}</p> 
-                 <div className={blogStyles.button}>
-                     <Link to={`/blog/$/${edge.node.fields.slug}/`}>Read More</Link>
-                </div>           
-                 </li>          
-                 )        
+        <div className="Projects">
+        {data.allMarkdownRemark.edges.map(edge => {          
+              return (     
+                     <div className="project" key={edge.node.id}>
+                         <div>              
+                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
+                               </Link>
+                           </h3>          
+                        <div className="description">{edge.node.frontmatter.excerpt}</div> 
+                    </div> 
+                    <div className="flex">
+                            <Link className="button" to={`/blog/$/${edge.node.fields.slug}/`}>Read More</Link>
+                    </div>   
+                    </div>            
+                    )        
                 }
-                )
-                }      
-        </ul>    
+            )
+        }      
+        </div>
     </Layout>
-  )
-}
+    )
+    }
+
 
 export default Blog
