@@ -3,7 +3,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "../styles/style.scss"
 import layoutStyles from "./layout.module.scss"
-import projects from '../data/projects'
+
 
 const Layout = props => {
   return (

@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 
+
 const Header = () => {
   const data = useStaticQuery(
     graphql`
@@ -23,7 +24,8 @@ const Header = () => {
         <Link to="/" className="brand">Dr Jacek Kolanowski</Link>
           </div>
           <div className="flex">
-            <Link to="/blog">Work</Link>
+            <Link to="/blog">All Work</Link>
+            <Link to="/community">Community</Link>
             <Link to="/about">About</Link>
           </div>
         </div>

@@ -15,7 +15,7 @@ export default function Index( {data} ) {
                 <p className="lighttext">Currently: Department leader and Centre director</p>
             </section>
             <section>
-            <h2>Research projects</h2>
+            <h2 id="work"><span class="emoji">🔬</span>Research projects</h2>
                 <div className="Projects">
                     {research.map(edge => {          
                     return (     
@@ -37,7 +37,7 @@ export default function Index( {data} ) {
         </div>
       </section>
       <section>
-            <h2>Infrastructure projects</h2>
+            <h2><span class="emoji">⚙️</span>Infrastructure projects</h2>
                 <div className="Projects">
                     {infrastructure.map(edge => {          
                     return (     
