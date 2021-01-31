@@ -1,5 +1,5 @@
 ---
-title: "EU-OPENSCREEN-DRIVE"
+title: "EU-OPENSCREEN-DRIVE (Screening & Chemoproteomics)"
 date: "2020-01-19"
 excerpt: "This is a project description."
 categories: "research"

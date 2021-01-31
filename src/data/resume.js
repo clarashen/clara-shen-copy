@@ -1,22 +1,27 @@
 export default [
   {
-    title: 'HTS service',
-    description: 'Director',
-    year: "2019-Current",
+    title: 'Institute of Bioorganic Chemistry, Polish Academy of Sciences',
+    description: 'Director: Centre for High Throughput Screening Studies',
+    year: "2018-Current",
   },
     {
       title: 'Institute of Bioorganic Chemistry, Polish Academy of Sciences',
-      description: 'PI: Department of Molecular probes and prodrugs',
+      description: 'Principal Investigator: Department of Molecular Probes and Prodrugs',
       year: "2017-Current",
     },
     {
       title: 'School of Chemistry, University of Sydney',
-      description: 'PI: Department of Molecular probes and prodrugs',
-      year: "2017-Current",
+      description: 'Postdoctoral Research and Teaching Associate',
+      year: "2015-2017",
     },
     {
-      title: 'Department of Chemistry, ENS Lyon',
-      description: 'PhD Graduate',
+      title: 'School of Chemistry, University of Sydney',
+      description: 'Postdoctoral Fellow of Fondation ARC pour la Recherche sur le Cancer',
+      year: "2014-2015",
+    },
+    {
+      title: 'Department of Chemistry, École Normale Supérieure de Lyon',
+      description: 'PhD fellow: La Ligue Nationale contre le Cancer',
       year: "2010-2013",
     },
 ]

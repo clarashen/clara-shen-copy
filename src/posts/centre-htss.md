@@ -1,24 +1,25 @@
 ---
-title: Centre for High Throughput Screening Studies at IBCH PAS
+title: Centre for High Throughput Screening Studies
 date: 2020-01-19
 excerpt: This is a project description.
 categories: infrastructure
 ---
 ***My role: Director***
 
-## About HTSS
+## About HTSS Centre
 
-The Centre for High Throughput Screening was established in 2018 to create a first high-throughput screening academic infrastructure in Poland. Its construction was supported by the funding from the Ministry of Science and Higher Education (2018-2023) within a project POL-OPENSCREEN, which brings together 7 institutions in Poland. Currently, it is the most advanced academic research infrastructure in Poland for a large-scale search of biologically active compounds. We are also a certified partner site of EU-OPENSCREEN European Research Infrastructure Consortium (ERIC) of >20 partners from 12 countries. 
+The Centre for High Throughput Screening Studies at [IBCH PAS](https://portal.ichb.pl/en) was established in 2018 to create a first high-throughput screening academic infrastructure in Poland. Its construction was supported by the funding from the Ministry of Science and Higher Education (2018-2023) within a project [POL-OPENSCREEN](pol-openscreen.pl/), which brings together 7 institutions in Poland. Currently, it is the most advanced academic research infrastructure in Poland for a large-scale search of biologically active compounds. We are also a certified partner site of [EU-OPENSCREEN](https://www.eu-openscreen.eu/about/about-eu-openscreen-eric.html) European Research Infrastructure Consortium (ERIC) of >20 partners from 12 countries. 
 
 Our key features include:
 
-* Unique, one-of-the-king autonomous laboratory built around robotic, automated AGAMEDE®  system supported by AI  for high-throughput and efficient mixtures optimisation
+* Unique, one-of-a-kind autonomous laboratory built around robotic, automated AGAMEDE®  system supported by AI  for high-throughput and efficient mixtures optimisation
 * Interdisciplinary team with extensive international experience 
 * Strong focus on the development of new assays and screening technologies
-* Access to infrastructure and expertise for a wide range of projects (biochemical and cellular assays, high-contant and combinatorial screening) with a unique profile in high-content screening, nucleic acids binders and plant cells-based projects
+* Access to infrastructure and expertise for a wide range of projects (biochemical and cellular assays, high-content and combinatorial screening) with a unique profile in high-content screening, nucleic acids binders and plant cells-based projects
 * Consulting in preparation of grant applications, designing R&D campaigns and creation of screening facilities.
 
-> AGAMEDE® is a prototype built by an interdisciplinary team of dr Radosław Pilarski from IBCH PAS and supported by three technological partners: Mitsubishi, Perlan and Labomatica. The construction of the system was funded within an EPiCELL project led by prof. dr hab. Wojciech Markiewicz, together with prof dr hab. Maciej Stobiecki, prof. dr hab. Jan Barciszewski – all from IBCH PAS – and prof. dr hab. Maciej Kurpisz – IHG PAS, and funded by NCBiR through STRATEGMED programme.
+###### AGAMEDE® is a prototype built by an interdisciplinary team of dr Radosław Pilarski from IBCH PAS and supported by three technological partners: Mitsubishi, Perlan and Labomatica. The construction of the system was funded within an EPiCELL project led by prof. dr hab. Wojciech Markiewicz, together with prof dr hab. Maciej Stobiecki, prof. dr hab. Jan Barciszewski – all from IBCH PAS – and prof. dr hab. Maciej Kurpisz – IHG PAS, and funded by NCBiR through STRATEGMED programme.
+
 
 ## My role
 

@@ -11,7 +11,7 @@ export default function Index( {data} ) {
         <Layout>
             <Metadata title="Home" description="Jacek Kolanowski isScientific research director" />
             <section>
-                <p>Jacek is a research leader and strategist who is passionate about bridging intersectoral industries for scientific advancement. He builds research and infrastucture programs that win funding, encourage collaboration and promote innovation.</p>
+                <p>Jacek is a research leader and strategist who is passionate about intersectroal collaborations for scientific advancement. He builds and coordinates research and infrastucture programs that win funding, encourage collaboration and promote innovation.</p>
                 <p className="lighttext">Currently: Department leader and Centre director</p>
             </section>
             <section>

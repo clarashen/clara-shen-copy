@@ -1,8 +1,8 @@
 ---
-title: EU-OPENSCREEN-DRIVE Hi
+title: "EU-OPENSCREEN-DRIVE (Growth & Development)"
 date: 2020-01-19
-excerpt: This is a project description.
-categories: infrastructure
+excerpt: "This is a project description."
+categories: "infrastructure"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

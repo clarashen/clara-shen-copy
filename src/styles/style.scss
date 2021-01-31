@@ -71,6 +71,8 @@ blockquote *:last-child {
   margin: 0;
 }
 
+
+
 @media screen and (min-width: 800px) { 
   blockquote {
     padding: 2rem;
@@ -101,6 +103,8 @@ h3 {
 p.lighttext {
   color: #afafaf;
 }
+
+
 
 a {
   color: var(--link-text-color);  text-decoration: none;
