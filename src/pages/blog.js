@@ -32,6 +32,8 @@ const Blog = () => {
 return (
     <Layout>
     <Metadata title="Work" description="Jacek Kolanowski" /> 
+    <section>
+        <h1>All projects</h1>
         <div className="Projects">
         {data.allMarkdownRemark.edges.map(edge => {          
               return (     
@@ -51,6 +53,7 @@ return (
             )
         }      
         </div>
+        </section>
     </Layout>
     )
     }
