@@ -1,11 +1,10 @@
 ---
-title: "In situ covalent labelling of macromolecules in live cells"
-date: "2020-01-18"
-featured: "../images/first-post.png"
-excerpt: "This is a short description."
-categories: "research"
+title: In situ covalent labelling of macromolecules in live cells
+date: 2020-01-18
+featured: ../images/first-post.png
+excerpt: This is a short description.
+categories: research
 ---
-
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Excepturi maxime
@@ -23,3 +22,4 @@ reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam molliti
 > Total funding amount:
 > Start/end of program:
 
+[This is a link to google.com](google.com)
