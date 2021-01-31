@@ -5,22 +5,23 @@ $secondaryColor: #57B660;
 $mainWhite: #fff;
 
 :root {
-  --link-color: #57B660;
-  --link-color-lighter: #82d48b;
+  --link-color: #4834d4;
+  --link-color-lighter: #686de0;
   --blockquote: #EAF9E9;
   --light-background: #f1f4f8;
-  --heading-color: #4B4E6D;
+  --heading-color: #130f40;
   --primary-color: #495057;
-  --link-text-color: rgb(73, 77, 75);
+  --link-text-color: #130f40;
+  --font-color: #535c68;
 }
 
 * {
   box-sizing: border-box;
 }
 body {
-  color: var(--primary-color);  font-size: 100%;
+  color: var(--font-color);  font-size: 100%;
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.8;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
@@ -31,12 +32,18 @@ ul,
 dl,
 table,
 blockquote {
-  font-size: 1.08rem;
+  font-size: 1.03rem;
   margin: 0 0 1.5rem 0;
 }
 
 ul {
   padding: 0 1rem;
+}
+
+h1,
+h2,
+h3 {
+  color: #130f40;
 }
 
 @media screen and (min-width: 800px) {
@@ -54,7 +61,7 @@ ul {
 blockquote {
   margin: 2rem 0;
   padding: 1rem;
-  background: var(--blockquote);
+  background: #ededff;
   font-weight: 400;
   border-radius: 0.3rem;
   border-left: 3px solid var(--link-color);
@@ -98,11 +105,11 @@ p.lighttext {
 a {
   color: var(--link-text-color);  text-decoration: none;
   font-weight: 600;
-  border-bottom: 3px solid #84c48f;
+  border-bottom: 3px solid var(--link-color);
 }
 
 a:hover {
-  border-bottom: 3px solid #46744d;
+  border-bottom: 3px solid var(--link-color-lighter);
 }
 
 

@@ -27,7 +27,8 @@ export const query = graphql`
 
 const ProjectPage = props => {
   return (
-    <Layout>      
+    <Layout>     
+        <Metadata title={props.data.markdownRemark.frontmatter.title} description="Jacek Kolanowski Science" />  
         <section>
         <div className={postStyles.content}>        
             <h1>{props.data.markdownRemark.frontmatter.title}</h1>       
@@ -46,7 +47,11 @@ const ProjectPage = props => {
                         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}        
                         >
                     </div>      
-                    </div>   
+                    </div> 
+        <a className="button large" href="mailto:jacek.kolanowski@gmail.com" target="_blank" rel="noreferrer">
+        <span class="emoji">📱</span>
+        Contact me
+        </a>  
         </section> 
     </Layout>
   )
