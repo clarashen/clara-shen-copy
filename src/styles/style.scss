@@ -86,7 +86,6 @@ blockquote *:last-child {
 }
 
 
-h1,
 h2,
 h3 {
   font-weight: 500;
@@ -94,6 +93,7 @@ h3 {
 
 h1 {
   font-size: 2.5em;
+  font-wehgt: 700;
 }
 
 h2 {
@@ -197,9 +197,9 @@ main {
 .navbar a {
   border-radius: 0.35rem;
   margin: 0 0.05rem;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--light-background);
   font-weight: 400;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   border: 1px solid transparent;
   padding: 0 0.3rem;
   background: transparent;
@@ -220,13 +220,13 @@ main {
 
 .navbar a.brand {
   font-weight: 500;
-  color: white;
+  color: var(--heading-color);
   white-space: nowrap;
   border: none;
   display: flex;
   align-items: center;
   line-height: 1;
-  background: transparent;
+  background: var(--blockquote);
 }
 
 .navbar a.brand .emoji {
@@ -258,19 +258,19 @@ main {
   }
 
   .navbar a {
-    padding: 0.75rem 1.25rem;
+    padding: 0.7rem 1.25rem;
     margin: 0 0.25rem;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: #464646;
   }
   .navbar a.brand {
-    padding: 0.75rem 1.25rem;
-    font-size: 1.6rem;
+    padding: 0.75rem 0.73rem;
+    font-size: 1.5rem;
     margin-right: 3rem;
     border: none;
-    background: transparent !important;
-    color: #464646;
+    background: var(--heading-color);
+    color: var(--blockquote);
   }
   .navbar a.brand img {
     height: 26px;
@@ -286,8 +286,14 @@ main {
     color: var(--heading-color);
   }
   .navbar a.brand:hover {
-    background:var(--light-background) !important;
+    background:var(--primary-color) !important;
+    color: var(--blockquote);
   }
+  .navbar a.brand[aria-current='page'] {
+    background: var(--heading-color);
+    color: var(--blockquote);
+  }
+
 }
 
 /*  Projects  */
@@ -395,9 +401,16 @@ a.button {
 }
 
 a.button.large {
-  padding: 0.8rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1.05rem;
   color: --link-color;
+  background: var(--heading-color);
+  border-width: 0;
+}
+
+a.button.large:hover {
+  background: var(--primary-color);
+  border-width: 0;
 }
 
 
@@ -409,6 +422,10 @@ a.button:hover {
 
 .emoji {
   margin: 0 0.4rem 0 0.1rem;
+}
+
+.contactbutton {
+  padding-top: 2rem;
 }
 
 /* footer */

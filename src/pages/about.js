@@ -46,11 +46,12 @@ const About = () => {
       <Teaching data={teaching} />
       </section>
       <section>
-      <h3>Contact me</h3>
+      <div class="contactbutton">
       <a className="button large" href="mailto:jacek.kolanowski@gmail.com" target="_blank" rel="noreferrer">
         <span class="emoji">✉️</span>
         Send me an email
         </a>
+        </div>
       </section>
 
     </section>

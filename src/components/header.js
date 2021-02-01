@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container">
         <div className="flex">
           <div className="flex">
-        <Link to="/" className="brand">Dr Jacek Kolanowski</Link>
+        <Link to="/" className="brand">JK</Link>
           </div>
           <div className="flex">
             <Link to="/">My work</Link>
