@@ -1,8 +1,7 @@
 ---
-title: In situ covalent labelling of macromolecules in live cells
-date: 2020-01-18
-featured: ../images/first-post.png
-excerpt: This is a short description.
+title: "OPUS Funding Scheme (National Science Centre, Poland)"
+date: 2019-01-18
+excerpt: "Small molecule tools to investigate local microenvironment of protein"
 categories: research
 ---
 Lorem ipsum dolor sit amet consectetur adipisicing elit.

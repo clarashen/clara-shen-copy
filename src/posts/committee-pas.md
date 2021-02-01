@@ -1,8 +1,8 @@
 ---
-title: "NEBI: National Centre of Imaging in Biological and Biomedical Sciences Grant"
-date: "2020-01-19"
-excerpt: "Development of platform for live cell fluorescent nanoscopy with 1 nm resolution."
-categories: "infrastructure"
+title: "Polish Academy of Sciences"
+date: 2020-01-19
+excerpt: "Committee of Chemistry and Committee of Molecular Biology of the Cell"
+categories: "leadership"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

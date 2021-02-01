@@ -1,15 +1,14 @@
 ---
 title: "EU-OPENSCREEN-DRIVE (Screening & Chemoproteomics)"
-date: "2020-01-19"
-excerpt: "This is a project description."
+date: 2019-02-02
+excerpt: "Ensuring long-term sustainability of excellence in chemical biology within Europe and beyond"
 categories: "research"
 ---
-Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
+Co-Leader, representative of Partner Site H2020-INFRADEV-2018-2020
 
-## Ipsam mollitia
+## About EU-OPENSCREEN
 
 alias temporibus dictorem ipsum dolor sit amet consectetur adipisicing elit.
 
-## Excepturi maxime
+> 34 partners, total of 4 999 563.75 EUR, dedicated IBCH PAS funding
 
-omnis earum nobis architecto, quia officiis aperiam voluptate quaerat.

@@ -24,8 +24,8 @@ const Header = () => {
         <Link to="/" className="brand">Dr Jacek Kolanowski</Link>
           </div>
           <div className="flex">
-            <Link to="/blog">All Work</Link>
-            <Link to="/community">Community</Link>
+            <Link to="/">My work</Link>
+            <Link to="/community">Speaking</Link>
             <Link to="/about">About</Link>
           </div>
         </div>

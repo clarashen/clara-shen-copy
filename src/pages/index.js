@@ -6,6 +6,7 @@ import { useStaticQuery, graphql, Link } from "gatsby"
 export default function Index( {data} ) {
     const research = data.research.edges
     const infrastructure = data.infrastructure.edges
+    const leadership = data.leadership.edges
 
     return (
         <Layout>
@@ -40,6 +41,28 @@ export default function Index( {data} ) {
             <h2><span class="emoji">⚙️</span>Infrastructure projects</h2>
                 <div className="Projects">
                     {infrastructure.map(edge => {          
+                    return (     
+                     <div className="project" key={edge.node.id}>
+                         <div>              
+                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
+                               </Link>
+                           </h3>          
+                        <div className="description">{edge.node.frontmatter.excerpt}</div> 
+                    </div> 
+                    <div className="flex">
+                            <Link className="button" to={`/blog/${edge.node.fields.slug}/`}>Details</Link>
+                    </div>   
+                    </div>            
+                    )        
+                }
+            )
+        }      
+        </div>
+      </section>
+      <section>
+            <h2><span class="emoji">🔍</span>Advisory</h2>
+                <div className="Projects">
+                    {leadership.map(edge => {          
                     return (     
                      <div className="project" key={edge.node.id}>
                          <div>              
@@ -101,6 +124,44 @@ export const pageQuery = graphql`
                                               }            
                                           }          
                                       }        
+                                  }
+            research: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+            filter: { frontmatter: {categories: {eq:"research"}}}) 
+          {
+                        edges {
+                              node {
+                                    frontmatter {
+                                          title 
+                                          date(formatString: "DD MMMM, YYYY")
+                                          excerpt
+                                  }              
+                                  timeToRead              
+                                  excerpt              
+                                  id
+                                  fields {
+                                      slug
                                   }            
+                              }          
+                          }        
+                      }
+            leadership: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+                        filter: { frontmatter: {categories: {eq:"leadership"}}}) 
+                      {
+                                    edges {
+                                          node {
+                                                frontmatter {
+                                                      title 
+                                                      date(formatString: "DD MMMM, YYYY")
+                                                      excerpt
+                                              }              
+                                              timeToRead              
+                                              excerpt              
+                                              id
+                                              fields {
+                                                  slug
+                                              }            
+                                          }          
+                                      }        
+                                  }
                   }
         `

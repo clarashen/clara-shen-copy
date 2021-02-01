@@ -1,7 +1,7 @@
 ---
-title: Centre for High Throughput Screening Studies
+title: "Centre for High Throughput Screening Studies"
 date: 2020-01-19
-excerpt: This is a project description.
+excerpt: Director
 categories: infrastructure
 ---
 ***My role: Director***

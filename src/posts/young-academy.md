@@ -1,7 +1,7 @@
 ---
 title: "Polish Young Academy PAS"
 date: "2020-01-19"
-excerpt: "Vice-chair (2019-2024)"
+excerpt: "Vice-chair (2019-Present)"
 categories: "leadership"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!

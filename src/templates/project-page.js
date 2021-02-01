@@ -10,14 +10,7 @@ export const query = graphql`
         markdownRemark(fields: { slug: { eq: $slug } }) {      
             frontmatter {        
                 title        
-                date(formatString: "DD MMMM, YYYY")
-                featured {
-                    childImageSharp {
-                        fluid(maxWidth:750) {
-                            ...GatsbyImageSharpFluid
-                        }
-                    }
-                }      
+                date(formatString: "DD MMMM, YYYY")      
             }      
             timeToRead      
             html    
@@ -31,18 +24,7 @@ const ProjectPage = props => {
         <Metadata title={props.data.markdownRemark.frontmatter.title} description="Jacek Kolanowski Science" />  
         <section>
         <div className={postStyles.content}>        
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>       
-                    {
-                        props.data.markdownRemark.frontmatter.featured && (
-                            <Img
-                                className={postStyles.featured}
-                                fluid={
-                                    props.data.markdownRemark.frontmatter.featured.childImageSharp.fluid
-                                    }
-                                alt={props.data.markdownRemark.frontmatter.title}
-                            />
-                        )
-                    }        
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1>              
                     <div          
                         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}        
                         >

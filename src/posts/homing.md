@@ -1,8 +1,7 @@
 ---
-title: "MultiGATE: fluorescent probes"
-date: "2020-01-18"
-featured: "../images/first-post.png"
-excerpt: "This is a short description."
+title: "HOMING Funding Scheme (Foundation for Polish Science, Poland)"
+date: 2018-01-01
+excerpt: "MultiGATE: dual-analyte responsive fluorescent probes for a real-time multi-parametric sensing in cellular models"
 categories: "research"
 ---
 

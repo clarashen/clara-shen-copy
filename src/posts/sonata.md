@@ -1,7 +1,7 @@
 ---
-title: "Masked bioluminogenic substrates"
-date: "2020-01-19"
-excerpt: "This is a project description."
+title: "SONATA Funding Scheme (National Science Centre, Poland)"
+date: 2018-01-19
+excerpt: "Caged bioluminogenic substrates for a selective molecular imaging of biochemical parameters in cancer"
 categories: "research"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!

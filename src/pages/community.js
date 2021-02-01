@@ -10,30 +10,29 @@ export default function Index( {data} ) {
         <Layout>
             <Metadata title="Leadership" description="Jacek Kolanowski is a scientific research director" />
             <section>
-            <h1>Leadership and Science community</h1>
-                <div className="Projects">
-                    {leadership.map(edge => {          
-                    return (     
-                     <div className="project" key={edge.node.id}>
-                         <div>              
-                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
-                               </Link>
-                           </h3>          
-                        <div className="description">{edge.node.frontmatter.excerpt}</div> 
-                    </div> 
-                    <div className="flex">
-                            <Link className="button" to={`/blog/${edge.node.fields.slug}/`}>Details</Link>
-                    </div>   
-                    </div>            
-                    )        
-                }
-            )
-        }      
-        </div>
-      </section>
-      <section>
-          <h2>Teaching</h2>
-      </section>
+            <h1>Speaking, Outreach and Teaching</h1>  
+            <p>A list of selected speaking engagagements, conferences, outreach and courses I have taught.</p>
+            </section>
+            <section>
+                <h2>Selected Seminars</h2>
+            </section>
+            <section>
+                <h2>Selected Conferences</h2>
+            </section>
+            <section>
+                <h2>Teaching</h2>
+            </section>
+            <section>
+                <h2>Outreach activities</h2>
+                <p>
+                <ul>
+                    <li>Young Scientists Conference on Molecular and Cell Biology popular science seminar (IIMCB, Warsaw, Poland)</li>
+                    <li>XXIII National Symposium of NKCh UAM seminar during students conference (Jeziory, Poland); 2018</li>
+                    <li>Do Science (Poznan branch) inaugural career seminar for PhD students and post-docs (AMU Poznan, Poland)</li>
+                    <li>Akademia Sztuk Przepięknych (PolAndRock Festival, Kostrzyn, Poland) lecture/discussion on biomarkers and personalised medicine for the participants of the music festival (various age groups and background)</li>
+                </ul>
+                </p>
+            </section>
     </Layout>
     )
 }
