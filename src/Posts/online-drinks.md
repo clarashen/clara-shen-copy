@@ -1,5 +1,5 @@
 ---
-title: Alcohola Concept Project
+title: 'Alcohola Concept Project'
 date: 2018-01-01
 excerpt: "UX Strategy, Research and Design"
 categories: "research"
