@@ -31,7 +31,7 @@ export default function Index( {data} ) {
                                     />
                                 )
                             }           
-                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
+                           <h3><Link className="title" to={`/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
                                </Link>
                            </h3>         
                         <div className="description">{edge.node.frontmatter.excerpt}</div> 

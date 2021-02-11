@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   branch: master
 
+local_backend: true
+
 publish_mode: editorial_workflow
 
 media_folder: "images/uploads"
@@ -9,7 +11,7 @@ media_folder: "images/uploads"
 collections:
   - name: "post"
     label: "Project"
-    folder: "src/posts"
+    folder: "src/Posts"
     create: true
     slug: "{{slug}}"
     fields:
