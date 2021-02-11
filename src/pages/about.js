@@ -9,43 +9,18 @@ import teaching from '../data/teaching'
 const About = () => {
   return (
     <Layout>
+                  <Metadata title="About" description="Clara Shen is a UX strategist and designer." />
     <section>
-      <h1>About</h1>
-            <p>Jacek is a Principal Investigator working on new chemical tools for in situ biosensing and molecular imaging of small molecules and proteins, and discovery of bioactive compounds, with documented diverse interdisciplinary research experiences at the interface of chemistry and biology. He is a recognised young leader known for an engaging and inclusive approach to teaching and outreach. Proficient in building intersectoral and international collaborations. Vice Chair of Polish Young Academy (2019-2021).</p>
-
-            <ul>
-              <li><a href="https://orcid.org/0000-0002-6779-4736">Publication List<span class="emoji">📚</span></a></li>
-            </ul>
+      <h1>About <span class="emoji">👋🏼</span></h1>
+            <p>I'm a multidisciplinary designer, scientist and IT enthusiast. I love working with technology, new tools and software and making sure it all works together. I'm passionate about education and helping people figure out how to get the most out of their digital tools. As someone with an analytical science background, I'm used to researching creative solutions to problems, synthesising diverse information and taking inventive approaches to complex tasks.</p>
+            <p>I've been designing user experiences professionally since 2018, but creative projects have been my passion since learning how to customize websites and use photoshop and illustrator in my early teens.</p>
+            <p>I moved from Australia to Poland in 2017 and love travelling.</p>
 
       <section id="experience">
-      <h3>Experience</h3>
+      <h2>Experience</h2>
       <Positions data={resume} />
       </section>
 
-      <section>
-      <h3>Peer review</h3>
-      <p>
-        <ul>
-          <li><a href="google.com">My Publons profile</a></li>
-          <li>5000 papers reviewed in 2019</li>
-          <li>Named top reviewer in 2019 for journal</li>
-          <blockquote>What can I say, Jacek does amazing reviews</blockquote>
-        </ul>
-      </p>
-      </section>
-      <section>
-      <h3>Achievements</h3>
-      <p>
-        <ul>
-          <li>Fellowship of the Polish Minister of Science and Higher Education for outstanding young scientists</li>
-        </ul>
-      </p>
-      </section>
-      <section>
-      <h3>Teaching</h3>
-      <Teaching data={teaching} />
-      </section>
-      <section>
       <div class="contactbutton">
       <a className="button large" href="mailto:jacek.kolanowski@gmail.com" target="_blank" rel="noreferrer">
         <span class="emoji">✉️</span>
@@ -54,7 +29,6 @@ const About = () => {
         </div>
       </section>
 
-    </section>
     </Layout>
   )
 }

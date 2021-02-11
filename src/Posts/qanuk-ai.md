@@ -1,10 +1,10 @@
 ---
-title: "HOMING Funding Scheme (Foundation for Polish Science, Poland)"
-date: 2018-01-01
-excerpt: "MultiGATE: dual-analyte responsive fluorescent probes for a real-time multi-parametric sensing in cellular models"
-categories: "research"
+title: "Qanuk.ai"
+date: 2019-01-18
+excerpt: "Market strategy, UX design, content strategy & writing"
+categories: research
+featured: "../images/qanuk.png"
 ---
-
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Excepturi maxime
@@ -22,3 +22,4 @@ reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam molliti
 > Total funding amount:
 > Start/end of program:
 
+[This is a link to google.com](google.com)

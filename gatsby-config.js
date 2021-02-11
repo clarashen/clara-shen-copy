@@ -6,9 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Jacek Kolanowski",
-    description: "Scientific leader and strategic research director.",
-    author: "Jacek Kolanowski",
+    title: "Clara Shen",
+    description: "UX Strategist and Designer",
+    author: "Clara Shen",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

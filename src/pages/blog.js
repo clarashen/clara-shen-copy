@@ -2,7 +2,6 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
-import blogStyles from "./blog.module.scss"
 import Metadata from "../components/metadata"
 
 const Blog = () => {
@@ -13,45 +12,45 @@ const Blog = () => {
                                       edges {
                                             node {
                                                   frontmatter {
-                                                        title 
+                                                        title
                                                         date(formatString: "DD MMMM, YYYY")
                                                         excerpt
-                                                }              
-                                                timeToRead              
-                                                excerpt              
+                                                }
+                                                timeToRead
+                                                excerpt
                                                 id
                                                 fields {
                                                     slug
-                                                }            
-                                            }          
-                                        }        
-                                    }      
-                                }    
-                                `  
-                            )  
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                `
+                            )
 return (
     <Layout>
-    <Metadata title="Work" description="Jacek Kolanowski" /> 
+    <Metadata title="Work" description="Jacek Kolanowski" />
     <section>
         <h1>All projects</h1>
         <div className="Projects">
-        {data.allMarkdownRemark.edges.map(edge => {          
-              return (     
+        {data.allMarkdownRemark.edges.map(edge => {
+              return (
                      <div className="project" key={edge.node.id}>
-                         <div>              
-                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}                
+                         <div>
+                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}
                                </Link>
-                           </h3>          
-                        <div className="description">{edge.node.frontmatter.excerpt}</div> 
-                    </div> 
+                           </h3>
+                        <div className="description">{edge.node.frontmatter.excerpt}</div>
+                    </div>
                     <div className="flex">
                             <Link className="button" to={`/blog/$/${edge.node.fields.slug}/`}>Details</Link>
-                    </div>   
-                    </div>            
-                    )        
+                    </div>
+                    </div>
+                    )
                 }
             )
-        }      
+        }
         </div>
         </section>
     </Layout>

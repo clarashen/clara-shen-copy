@@ -21,11 +21,10 @@ const Header = () => {
       <div className="container">
         <div className="flex">
           <div className="flex">
-        <Link to="/" className="brand">JK</Link>
+        <Link to="/" className="brand">cs.</Link>
           </div>
           <div className="flex">
             <Link to="/">My work</Link>
-            <Link to="/community">Speaking</Link>
             <Link to="/about">About</Link>
           </div>
         </div>

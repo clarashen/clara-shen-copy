@@ -10,13 +10,13 @@
   
   .main-content {
     margin: 50px auto;
-    max-width: 750px;
-    padding: 2rem 1rem 4rem;
+    max-width: 800px;
+    padding: 0.5rem;
   }
 
 @media screen and (min-width: 800px) { 
   .main-content{
-    padding-top: 0.5rem;
+    padding: 1rem 0rem;
     margin: 1rem auto;
   }
 }

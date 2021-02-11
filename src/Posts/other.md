@@ -1,8 +1,9 @@
 ---
-title: "Consulting & Peer Review"
-date: "2020-01-19"
-excerpt: "Some projects I have consulted on and information about my peer reviews."
-categories: "leadership"
+title: "Other client works"
+date: 2018-01-19
+excerpt: "A brief overview of other client projects"
+categories: "research"
+featured: "../images/first-post.png"
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 

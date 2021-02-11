@@ -19,3 +19,4 @@ collections:
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+     - {label: "Featured", name: "featured", widget: "image"}

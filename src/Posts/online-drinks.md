@@ -1,9 +1,11 @@
 ---
-title: "OPUS Funding Scheme (National Science Centre, Poland)"
-date: 2019-01-18
-excerpt: "Small molecule tools to investigate local microenvironment of protein"
-categories: research
+title: "Alcohola Concept Project"
+date: 2018-01-01
+excerpt: "UX Strategy, Research and Design"
+categories: "research"
+featured: "../images/first-post.png"
 ---
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Excepturi maxime
@@ -21,4 +23,3 @@ reprehenderit accusamus, explicabo eligendi necessitatibus soluta! Ipsam molliti
 > Total funding amount:
 > Start/end of program:
 
-[This is a link to google.com](google.com)

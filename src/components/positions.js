@@ -6,7 +6,7 @@ export default function Positions({ data }) {
             {data.map((node) => {
                 return (
                     <div className="project" id="list" key={node.title}>
-                        <div>
+                    <div>
                             <h3>{node.title}</h3>
                             <div className="description">{node.description}</div>
                     </div>
