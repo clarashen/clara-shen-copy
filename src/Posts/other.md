@@ -3,7 +3,7 @@ title: "Other client works"
 date: 2018-01-19
 excerpt: "A brief overview of other client projects"
 categories: "research"
-featured: "../images/first-post.png"
+featured: "../images/cardo.png"
 designers: "Clara Shen & Danuta Seczkowska"
 year: "2019-2020"
 ---
