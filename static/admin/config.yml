@@ -19,4 +19,6 @@ collections:
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Categories", name: "categories", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-     - {label: "Featured", name: "featured", widget: "image"}
+      - {label: "Featured", name: "featured", widget: "image"}
+      - {label: "Designers", name: "designers", widget: "string"}
+      - {label: "Year", name: "year", widget: "string"}

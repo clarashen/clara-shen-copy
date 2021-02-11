@@ -4,6 +4,8 @@ date: 2018-01-01
 excerpt: "UX Strategy, Research and Design"
 categories: "research"
 featured: "../images/first-post.png"
+designers: "Clara Shen & Danuta Seczkowska"
+year: "2019-2020"
 ---
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
