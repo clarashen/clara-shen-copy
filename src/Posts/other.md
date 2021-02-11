@@ -1,11 +1,11 @@
 ---
-title: "Other client works"
+title: Cardo Wallet app
 date: 2018-01-19
-excerpt: "A brief overview of other client projects"
-categories: "research"
-featured: "../images/first-post.png"
-designers: "Clara Shen & Danuta Seczkowska"
-year: "2019-2020"
+excerpt: A brief overview of other client projects
+categories: research
+featured: /images/uploads/cardo.png
+designers: Clara Shen & Danuta Seczkowska
+year: 2019-2020
 ---
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 
