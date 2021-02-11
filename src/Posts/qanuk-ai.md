@@ -3,7 +3,7 @@ title: Qanuk.ai
 date: 2019-01-18
 excerpt: Market strategy, UX design, content strategy & writing
 categories: research
-featured: /images/uploads/qanuk.png
+featured: "../images/qanuk.png"
 designers: Clara Shen
 year: 2019-2020
 ---
