@@ -1,5 +1,5 @@
 ---
-title: "Other client works"
+title: "Cardo Wallet App"
 date: 2018-01-19
 excerpt: "A brief overview of other client projects"
 categories: "research"

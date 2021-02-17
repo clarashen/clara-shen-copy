@@ -31,25 +31,28 @@ export const query = graphql`
 const ProjectPage = props => {
   return (
     <Layout>     
-        <Metadata title={props.data.markdownRemark.frontmatter.title} description="Jacek Kolanowski Science" />  
+        <Metadata title={props.data.markdownRemark.frontmatter.title} description="Clara Shen" />  
         <section>
-        <div className={postStyles.content}>
-            <div className={postStyles.header}>     
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.excerpt}</p>
+        <div className={postStyles.header}>  
             <div className="details">
                 <p>{props.data.markdownRemark.frontmatter.year}</p>
                 <p>{props.data.markdownRemark.frontmatter.designers}</p>
             </div>
-            </div> 
-            {
+            </div>  
+        {
                 props.data.markdownRemark.frontmatter.featured && (
                  <Img
                 fluid={props.data.markdownRemark.frontmatter.featured.childImageSharp.fluid}
                 alt={props.data.markdownRemark.frontmatter.title}
                 />
                 )
-            }         
+            }     
+        <div className={postStyles.content}>
+           
+            <div>   
+            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+            <p>{props.data.markdownRemark.frontmatter.excerpt}</p>
+            </div>   
              
                     <div          
                         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}        
@@ -57,7 +60,7 @@ const ProjectPage = props => {
                     </div>      
                     </div> 
         </section> 
-        <a className="button large" href="mailto:jacek.kolanowski@gmail.com" target="_blank" rel="noreferrer">
+        <a className="button large" href="mailto:cshe7660@gmail.com" target="_blank" rel="noreferrer">
         <span class="emoji">📱</span>
         Contact me
         </a>  

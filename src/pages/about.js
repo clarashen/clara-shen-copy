@@ -3,8 +3,7 @@ import Layout from "../components/layout"
 import Metadata from "../components/metadata"
 import Positions from '../components/positions'
 import resume from '../data/resume'
-import Teaching from '../components/teaching'
-import teaching from '../data/teaching'
+
 
 const About = () => {
   return (
@@ -22,7 +21,7 @@ const About = () => {
       </section>
 
       <div class="contactbutton">
-      <a className="button large" href="mailto:jacek.kolanowski@gmail.com" target="_blank" rel="noreferrer">
+      <a className="button large" href="mailto:cshe7660@gmail.com" target="_blank" rel="noreferrer">
         <span class="emoji">✉️</span>
         Send me an email
         </a>
