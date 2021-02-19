@@ -25,6 +25,7 @@ const Header = () => {
           </div>
           <div className="flex">
             <Link to="/">My work</Link>
+            <Link to="/blog">Blog</Link>
             <Link to="/about">About</Link>
           </div>
         </div>

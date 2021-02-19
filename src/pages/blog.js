@@ -30,21 +30,20 @@ const Blog = () => {
                             )
 return (
     <Layout>
-    <Metadata title="Work" description="Jacek Kolanowski" />
+    <Metadata title="Blog" description="Writings, articles, posts, updates." />
     <section>
-        <h1>All projects</h1>
+        <h1>Blog</h1>
         <div className="Projects">
         {data.allMarkdownRemark.edges.map(edge => {
               return (
-                     <div className="project" key={edge.node.id}>
+                     <div className="blogpost" key={edge.node.id}>
                          <div>
-                           <h3><Link className="title" to={`/blog/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}
+                             <div>{edge.node.frontmatter.date}</div>
+                           <h3><Link className="title" to={`/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}
                                </Link>
                            </h3>
-                        <div className="description">{edge.node.frontmatter.excerpt}</div>
                     </div>
                     <div className="flex">
-                            <Link className="button" to={`/blog/$/${edge.node.fields.slug}/`}>Details</Link>
                     </div>
                     </div>
                     )
