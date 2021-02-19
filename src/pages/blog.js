@@ -4,41 +4,20 @@ import Layout from "../components/layout"
 import Img from "gatsby-image"
 import Metadata from "../components/metadata"
 
-const Blog = () => {
-  const data = useStaticQuery(
-          graphql`
-                query {
-                        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-                                      edges {
-                                            node {
-                                                  frontmatter {
-                                                        title
-                                                        date(formatString: "DD MMMM, YYYY")
-                                                        excerpt
-                                                }
-                                                timeToRead
-                                                excerpt
-                                                id
-                                                fields {
-                                                    slug
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                                `
-                            )
-return (
+export default function Blog( {data} ) {
+    const blog = data.blog.edges
+
+    return (
     <Layout>
     <Metadata title="Blog" description="Writings, articles, posts, updates." />
     <section>
         <h1>Blog</h1>
-        <div className="Projects">
-        {data.allMarkdownRemark.edges.map(edge => {
+        <div className="Postlist">
+        {blog.map(edge => {
               return (
-                     <div className="blogpost" key={edge.node.id}>
+                     <div className="post" key={edge.node.id}>
                          <div>
-                             <div>{edge.node.frontmatter.date}</div>
+                             <div className="date">{edge.node.frontmatter.date}</div>
                            <h3><Link className="title" to={`/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}
                                </Link>
                            </h3>
@@ -54,7 +33,28 @@ return (
         </section>
     </Layout>
     )
-    }
+}
 
-
-export default Blog
+export const pageQuery = graphql`
+    query BlogQuery {
+        blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+            filter: { frontmatter: {categories: {eq:"blog"}}}) 
+          {
+                        edges {
+                              node {
+                                    frontmatter {
+                                          title 
+                                          date(formatString: "DD MMMM, YYYY")
+                                          excerpt
+                                  }              
+                                  timeToRead              
+                                  excerpt              
+                                  id
+                                  fields {
+                                      slug
+                                  }            
+                              }          
+                          }        
+                      }
+                  }
+        `

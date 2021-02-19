@@ -348,6 +348,30 @@ main {
   border-width: 2px;
 }
 
+/* posts listing */
+
+.post {
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.post a {
+  display: flex;
+  align-items: center;
+  border-width: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.post a:hover {
+  color: var(--link-color);
+  text-decoration: underline;
+}
+
+.date {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
 
 #list h3 {
   font-size: 1.1rem;

@@ -1,5 +1,10 @@
 export default [
   {
+    title: 'Meet Hydrogen',
+    description: 'Consultant',
+    year: "2020-Current",
+  },
+  {
     title: 'SNOW.DOG',
     description: 'User Experience Designer',
     year: "2018-Current",
