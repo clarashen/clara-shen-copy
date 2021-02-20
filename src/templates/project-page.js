@@ -1,19 +1,17 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import postStyles from "./projectPage.module.scss"
 import Metadata from "../components/metadata"
-import Img from "gatsby-image"
 
 export const query = graphql`  
     query($slug: String!) {    
         markdownRemark(fields: { slug: { eq: $slug } }) {      
-            frontmatter {        
+            frontmatter {  
+                client      
                 title        
                 date(formatString: "DD MMMM, YYYY")
                 excerpt
-                designers
-                year
                 featured {
                     childImageSharp {
                         fluid(maxWidth: 800) {
@@ -34,36 +32,24 @@ const ProjectPage = props => {
         <Metadata title={props.data.markdownRemark.frontmatter.title} description="Clara Shen" />  
         <section>
         <div className={postStyles.header}>  
-            <div className="details">
-                <p>{props.data.markdownRemark.frontmatter.year}</p>
-                <p>{props.data.markdownRemark.frontmatter.designers}</p>
-            </div>
             </div>  
-        {
-                props.data.markdownRemark.frontmatter.featured && (
-                 <Img
-                fluid={props.data.markdownRemark.frontmatter.featured.childImageSharp.fluid}
-                alt={props.data.markdownRemark.frontmatter.title}
-                />
-                )
-            }     
+        <div className={postStyles.client}>{props.data.markdownRemark.frontmatter.client}</div>
         <div className={postStyles.content}>
-           
-            <div>   
-            <h1>{props.data.markdownRemark.frontmatter.title}</h1>
-            <p>{props.data.markdownRemark.frontmatter.excerpt}</p>
-            </div>   
-             
                     <div          
                         dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}        
                         >
                     </div>      
-                    </div> 
-        </section> 
-        <a className="button large" href="mailto:cshe7660@gmail.com" target="_blank" rel="noreferrer">
-        <span class="emoji">📱</span>
-        Contact me
-        </a>  
+        </div> 
+        
+        <div className={postStyles.updated}>
+             <p className="date">Last updated: {props.data.markdownRemark.frontmatter.date}</p>
+        </div>    
+        
+        </section>
+        <section> 
+        <span class="emoji">⬅️</span>
+        <Link to={`/`}>Return to homepage</Link>
+        </section>
 
     </Layout>
   )

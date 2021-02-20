@@ -1,13 +1,11 @@
 ---
-title: 'My First Blog Post'
+client: ''
+title: 'Welcome! A little about me.'
 date: 2021-02-19
 excerpt: 'UX Research, Design & Strategy'
 categories: 'blog'
 featured: "../images/blomberg.png"
-designers: 'Clara Shen'
-year: '2019-2020'
 ---
-My role: Co-Leader, representative of Partner Site H2020-INFRADEV-2018-2020
 
 ## About EU-OPENSCREEN
 

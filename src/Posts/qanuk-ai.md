@@ -1,12 +1,14 @@
 ---
+client: 'Qanuk.ai'
 title: 'Qanuk.ai'
 date: 2019-01-18
 excerpt: "Market strategy, UX design, content strategy & writing"
 categories: 'research'
 featured: "../images/qanuk.png"
-designers: 'Clara Shen'
-year: '2019-2020'
 ---
+
+# Designing a SaaS website for a ML product recommendation tool
+
 Lorem ipsum dolor sit amet consectetur adipisicing elit.
 
 ## Excepturi maxime

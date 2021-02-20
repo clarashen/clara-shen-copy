@@ -1,12 +1,14 @@
 ---
-title: "Cardo Wallet App"
+client: "Cardo Wallet App"
+title: 'Cardo Wallet App'
 date: 2018-01-19
 excerpt: "A brief overview of other client projects"
 categories: "research"
 featured: "../images/cardo.png"
-designers: "Clara Shen & Danuta Seczkowska"
-year: "2019-2020"
 ---
+
+# Snowdog UX Challenge — wallet app case study
+
 Seprehenderit accusamus, explicabo eligendi necessitatibus soluta!
 
 ## Ipsam mollitia

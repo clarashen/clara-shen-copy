@@ -12,11 +12,11 @@ export default function Index( {data} ) {
             <Metadata title="Home" description="Clara Shen is a UX strategist and designer." />
             <section>
                 <h1 className="name">Clara Shen</h1>
-                <p>I am an interdisciplinary designer and strategist with a background in the analytical sciences. Passionate about research and helping organizations bring their vision to life, I love working with people and helping them reveal what they are passionate about through their website, app and customer experience.</p>
+                <p>I am an interdisciplinary designer and strategist with a background in the analytical sciences. I love working with and helping people, learning about new topics and disciplines, and helping.</p>
                 <p className="lighttext">Currently designing user experiences at SNOW.DOG.</p>
             </section>
             <section>
-            <h2 id="work"><span class="emoji">✍🏼</span>Selected work</h2>
+            <h2 id="work">Selected work</h2>
                 <div className="Projects">
                     {research.map(edge => {          
                     return (     

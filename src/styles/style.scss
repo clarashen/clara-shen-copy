@@ -4,12 +4,13 @@
 $mainWhite: #fff;
 
 :root {
-  --link-color: #F75590;
-  --link-color-lighter: #9c0e42;
-  --blockquote: #fff0f6;
+  --link-color: #ff4e00;
+  --link-color-lighter: #f49065;
+  --blockquote: #fcf5f3;
   --light-background: #f1f4f8;
-  --heading-color: #130f40;
-  --primary-color: #495057;
+  --heading-color: #02020B;
+  --primary-color: #02020B;
+  --secondary-color: #01CD74;
   --link-text-color: #130f40;
   --font-color: #535c68;
 }
@@ -102,7 +103,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   padding-bottom: .5rem;
-  border-bottom: 4px solid var(--light-background);
+  border-bottom: 2px solid var(--light-background);
   margin: 0 0 0.1rem;
 }
 
@@ -112,15 +113,16 @@ h3 {
 }
 
 p.lighttext {
-  color: #afafaf;
+  color: var(--font-color);
 }
 
 
 
 a {
-  color: var(--link-text-color);  text-decoration: none;
+  color: var(--link-text-color);  
+  text-decoration: none;
   font-weight: 600;
-  border-bottom: 3px solid var(--link-color);
+  border-bottom: 3px solid var(--secondary-color);
 }
 
 a:hover {
@@ -182,7 +184,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--heading-color);
+  background: #fff;
   box-shadow: 0 3px 13px rgba(100, 110, 140, 0.1),
     0 2px 4px rgba(100, 110, 140, 0.15);
   z-index: 2;
@@ -200,9 +202,9 @@ main {
 .navbar a {
   border-radius: 0rem;
   margin: 0 0.05rem;
-  color: var(--light-background);
+  color: var(--heading-color);
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 1rem;
   border: 0px solid transparent;
   padding: 0.5rem;
   background: transparent;
@@ -222,14 +224,14 @@ main {
 }
 
 .navbar a.brand {
-  font-weight: 500;
-  color: var(--link-color);
+  font-weight: 600;
+  color: var(--light-background);
   white-space: nowrap;
   border: none;
   display: flex;
   align-items: center;
-  line-height: 1;
-  background: var(--blockquote);
+  line-height: 1.2;
+  background: var(--link-color);
 }
 
 .navbar a.brand .emoji {
@@ -241,9 +243,18 @@ main {
   width: 22px;
 }
 
+.navbar a:hover {
+  font-weight: 700;
+}
+
+.navbar a[aria-current='page'] {
+  font-weight: 700;
+  color: var(--link-color);
+}
+
 @media screen and (min-width: 500px) {
   .navbar a {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 0.5rem;
   }
 }
@@ -264,7 +275,7 @@ main {
     padding: 0.7rem 1.25rem;
     margin: 0 0.25rem;
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: #464646;
   }
   .navbar a.brand {
@@ -285,9 +296,8 @@ main {
   }
   .navbar a:hover,
   .navbar a[aria-current='page'] {
-    background: transparent;
-    border-bottom: 4px solid var(--link-text-color);
-    color: var(--heading-color);
+    background: var(--link-color);
+    color: #fff;
   }
   .navbar a.brand:hover {
     background:var(--link-color-lighter) !important;
@@ -318,7 +328,7 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .project a {
@@ -338,10 +348,6 @@ main {
   margin: 0;
 }
 
-.project .description {
-  font-size: 1rem;
-  color: var(--light-font-color);
-}
 
 .project a.button {
   margin-left: 1.5rem;
@@ -374,13 +380,10 @@ main {
 }
 
 #list h3 {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
-#list {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
 @media screen and (min-width: 800px) {
 
@@ -407,15 +410,6 @@ main {
 
   #list {
     padding: 0.95rem 0rem;
-  }
-
-  .project .type {
-    color: #000;
-    font-weight:400;
-    background-color: #FBD87F;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 0.95rem;
   }
 
   .featured {
@@ -447,13 +441,13 @@ a.button {
 a.button.large {
   padding: 0.7rem 1rem;
   font-size: 1.05rem;
-  color: --link-color;
-  background: var(--heading-color);
+  color: var(--heading-color);
+  background: var(--secondary-color);
   border-width: 0;
 }
 
 a.button.large:hover {
-  background: var(--primary-color);
+  background: var(--link-color);
   border-width: 0;
 }
 
@@ -472,9 +466,31 @@ a.button:hover {
   padding-top: 2rem;
 }
 
-/* footer */
+/* experience */
 
-p.footer {
-  font-size: 1rem;
+.experience {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .75rem 0;
+  border-bottom: 2px solid var(--blockquote)
 }
+
+.experience .type {
+  color: #fff;
+  font-weight:600;
+  background-color: var(--link-color);
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+
+.experience .description {
+  font-size: 1.2rem;
+  color: var(--light-font-color);
+}
+
+
+
 

@@ -1,6 +1,7 @@
 import React from "react"
 import footerStyles from "./footer.module.scss"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
+
 
 const Footer = () => {
     const data = useStaticQuery(
@@ -18,8 +19,18 @@ const Footer = () => {
     return (
         <footer className={footerStyles.siteFooter}>
             <div className={footerStyles.container}>
-            <p className="footer">
-                Site developed by {data.site.siteMetadata.author} &copy;{" "}</p>
+            <p>
+                Designed and developed by {data.site.siteMetadata.author}. No cookies or tracking. <a href="mailto:cshe7660@gmail.com" target="_blank" rel="noreferrer">Send me an email.</a>
+            </p>
+
+            <div className={footerStyles.socialmedia}>
+              <Link to={`/resource-list`}>Links</Link>
+              <a href="https://dribbble.com/uxclara">Dribbble</a>
+              <a href="https://medium.com/@clarashen_">Medium</a>
+              <a href="https://www.linkedin.com/in/clarashen/">LinkedIn</a>
+              <a href="https://www.researchgate.net/profile/Clara-Shen">ResearchGate</a>
+            </div>
+
             </div>
         </footer>
     )
