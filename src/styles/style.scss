@@ -54,6 +54,10 @@ section {
   margin-top:3rem;
 }
 
+img {
+  border-radius: 4px;
+}
+
 
 
 @media screen and (min-width: 800px) {
@@ -103,7 +107,7 @@ h1 {
 h2 {
   font-size: 1.8rem;
   padding-bottom: .5rem;
-  border-bottom: 2px solid var(--light-background);
+  border-bottom: 0px solid var(--light-background);
   margin: 0 0 0.1rem;
 }
 
@@ -249,7 +253,7 @@ main {
 
 .navbar a[aria-current='page'] {
   font-weight: 700;
-  color: var(--link-color);
+  color: var(--heading-color);
 }
 
 @media screen and (min-width: 500px) {
@@ -272,20 +276,23 @@ main {
   }
 
   .navbar a {
-    padding: 0.7rem 1.25rem;
+    padding: 0.5rem 1rem;
     margin: 0 0.25rem;
     font-size: 1.1rem;
     font-weight: 600;
     color: #464646;
+    border-radius: 4px;
   }
+
   .navbar a.brand {
-    padding: 0.75rem 0.73rem;
     font-size: 1.5rem;
     margin-right: 3rem;
     border: none;
-    background: var(--link-color);
-    color: var(--blockquote);
+    color: var(--link-color);
+    background: transparent;
+    padding: 0;
   }
+
   .navbar a.brand img {
     height: 26px;
     width: 26px;
@@ -296,18 +303,20 @@ main {
   }
   .navbar a:hover,
   .navbar a[aria-current='page'] {
-    background: var(--link-color);
+    background: var(--heading-color);
     color: #fff;
   }
+
   .navbar a.brand:hover {
-    background:var(--link-color-lighter) !important;
-    color: var(--blockquote);
+    background: #fff !important;
+    color: var(--heading-color);
     border-bottom: none;
   }
+
   .navbar a.brand[aria-current='page'] {
-    background: var(--link-color);
-    color: var(--blockquote);
+    color: var(--link-color);
     border-bottom: none;
+    background: transparent;
   }
 
 }
@@ -397,11 +406,11 @@ main {
 
   .project {
     border-bottom-width: 0px;
-    padding: 1.25rem 0;
+    padding: 0.5rem 0;
   }
 
   .project h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
   .project .description {
@@ -491,6 +500,33 @@ a.button:hover {
   color: var(--light-font-color);
 }
 
+/* Latest posts */
 
+.LatestPosts {
+  background-color: #f0f7f4;
+  padding: 2rem;
+  border-radius: 8px;
+}
 
+.LatestPosts h2 {
+  margin-top: 0;
+}
+
+.viewall {
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  background-color: var(--heading-color);
+  border-radius: 4px;
+  border-bottom: 0;
+}
+
+.viewall:hover {
+  border-bottom: 0;
+  background-color: var(--link-color);
+}
+
+.button {
+  margin-top: 2rem;
+}
 

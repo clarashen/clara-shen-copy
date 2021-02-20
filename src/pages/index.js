@@ -6,6 +6,7 @@ import Img from "gatsby-image"
 
 export default function Index( {data} ) {
     const research = data.research.edges
+    const blog = data.blog.edges
 
     return (
         <Layout>
@@ -43,6 +44,32 @@ export default function Index( {data} ) {
         }      
         </div>
       </section>
+      <section>
+    <div className="LatestPosts">
+    <h2>Recent posts</h2>
+      <div className="Postlist">
+        {blog.map(edge => {
+              return (
+                     <div className="post" key={edge.node.id}>
+                         <div>
+                             <div className="date">{edge.node.frontmatter.date}</div>
+                           <h3><Link className="title" to={`/${edge.node.fields.slug}/`}>{edge.node.frontmatter.title}
+                               </Link>
+                           </h3>
+                    </div>
+                    <div className="flex">
+                    </div>
+                    </div>
+                    )
+                }
+            )
+        }
+        </div>
+        <div className="button">
+           <Link className="viewall" to={`/blog`}>All posts</Link> 
+        </div>
+        </div>
+      </section>
  
     </Layout>
     )
@@ -76,5 +103,23 @@ export const pageQuery = graphql`
                               }          
                           }        
                       }
+        blog: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }
+            limit: 3
+            filter: { frontmatter: {categories: {eq:"blog"}}}) 
+            {
+                    edges {
+                            node {
+                                  frontmatter {
+                                     title 
+                                     date(formatString: "DD MMMM, YYYY")
+                                     excerpt
+                                              }
+                                              id
+                                              fields {
+                                                  slug
+                                              }            
+                                          }          
+                                      }        
+                                  }
                   }
         `

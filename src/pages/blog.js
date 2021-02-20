@@ -1,7 +1,6 @@
 import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import Metadata from "../components/metadata"
 
 export default function Blog( {data} ) {
