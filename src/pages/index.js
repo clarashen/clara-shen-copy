@@ -64,10 +64,9 @@ export default function Index( {data} ) {
                 }
             )
         }
+
         </div>
-        <div className="button">
-           <Link className="viewall" to={`/blog`}>All posts</Link> 
-        </div>
+        <Link className="viewall" to={`/blog`}>All posts</Link>
         </div>
       </section>
  
